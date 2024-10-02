@@ -1,15 +1,15 @@
 package connection
 
 import (
-	"InfositelOR/pkg/infrastructure/db/mysql/persistence"
 	"database/sql"
 	"fmt"
 
 	_ "github.com/lib/pq"
+
+	"InfositelOR/pkg/infrastructure/db/mysql/persistence"
 )
 
 const (
-	// connectionString = "postgres://andysantisteban:rbMeQeXFAa5weA0GZLFcp2pPZRkevvsJ@dpg-cokjc70l5elc73c7phvg-a.oregon-postgres.render.com/infositelordb"
 	connectionString = "postgres://postgres:pasword@127.0.0.1/infositelordb"
 )
 

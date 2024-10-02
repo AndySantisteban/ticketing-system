@@ -1,0 +1,17 @@
+version: "2"
+cloud:
+
+sql:
+  - engine: "postgresql"
+    queries: "./queries"
+    schema: "./schema"
+    gen:
+      go:
+        package: "persistence"
+        out: "persistence"
+        sql_package: "database/sql"
+        emit_interface: true
+        emit_empty_slices: false
+        emit_pointers_for_null_types: false
+        emit_all_enum_values: true
+        emit_sql_as_comment: true
